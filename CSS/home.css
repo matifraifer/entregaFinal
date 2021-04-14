@@ -1,0 +1,871 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: white;
+    margin-top: 3em;
+}
+.headerHome{    
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.barraNavegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    color: #c97392;
+
+}
+.logo{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 5em;
+}
+
+.opcionesHome:hover{
+    color: #c97392;
+}
+.opcionesHome{
+    text-decoration: none;
+    font-weight: bolder;
+    border-right: 2px;
+    border-right-style:solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-color:   rgb(85, 85, 85);
+    color:rgb(85, 85, 85)
+}
+
+#ultimaHome{
+    text-decoration: none;
+    font-weight: bolder;
+    border-right: 2px;
+    border-right-style:none;
+    padding-left: 10px;
+    color:rgb(85, 85, 85)
+}
+
+
+#ultimaHome:hover{
+    color: #c97392;
+}
+/* Fin barra de navegacion */
+
+
+/* Comienzo Home */
+#carruselHome{
+    margin-top: 3em;
+}
+.imagenCarrusel{
+    overflow: hidden;
+    background-size: cover
+}
+.articleBienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1em;
+}
+.tituloBienvenida1{
+    margin-left: 2em;
+    margin-right: 2em;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.tituloBienvenida2{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.divIcons{
+    width: 100vw;
+    margin-top:2em ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divIcon{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+font-weight: bold;
+}
+.iconServices{
+    width: 4em;
+    height: 4em;
+    margin-bottom: 0.5em;
+    fill: black;
+}
+
+.articleDestacados{
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+.tituloDestacados{
+    border-left: #c97392 1px solid;
+    border-right: #c97392 1px solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.galeriaDestacados{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.ofertasMes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    background-color: #4ecc98;
+    padding: 2em 7em;
+    color: white;
+    border-radius: 2em;
+}
+.tituloOfertas{
+    font-size: large;
+    background-color: #4ecc98;
+    padding: 2em 7em;
+    color: white;
+    border-radius: 2em;
+    animation-name: ofertasMes;
+    animation-timing-function:linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.divOfertas{
+    display: flex;
+    flex-direction: row;
+}
+.carruselOfertas{
+    width: 40vw;
+    margin: 2em;
+}
+
+#eventosDestacados1{
+    background-image: url(../multimedia/fotosHome/2.jpg);
+    margin: 1em;
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    font-weight: bold;
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    padding-bottom: 2em;
+}
+
+#eventosDestacados2{
+    background-image: url(../multimedia/fotosHome/1.jpg);
+    margin: 1em;
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    font-weight: bold;
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    padding-bottom: 2em;
+
+}
+
+#eventosDestacados3{
+    background-image: url(../multimedia/fotosHome/3.jpg);    margin: 1em;
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    padding-bottom: 2em;
+
+}
+#eventosDestacados4{
+    background-image: url(../multimedia/fotosHome/4.jpg);
+    margin: 1em;
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    padding-bottom: 2em;
+
+}
+#eventosDestacados1:hover{
+    animation-name: backgroundZoom;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+#eventosDestacados2:hover{
+    animation-name: backgroundZoom;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+#eventosDestacados3:hover{
+    animation-name: backgroundZoom;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+#eventosDestacados4:hover{
+    animation-name: backgroundZoom;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+/* Fin home */
+
+/* Comienzo Planner */
+.tituloPlanner{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    margin-top: 5em;
+    padding-bottom: 1em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.opcionesPlanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em;
+}
+.boton{
+    box-shadow: .1em .1em .8em rgba(0, 0, 0, .6);
+    border-radius: .3em;
+    width: 13em;
+    height: 14em;
+    margin:1em;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+.nameOpcion:hover{
+    animation-name: planner_efecto;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#fotoBotonSalon{
+    background-color:green;
+    height: 12em;
+    background: url(../multimedia/salones/salon1.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+#fotoBotonFiesta{
+    background-color:green;
+    height: 12em;
+    background: url(../multimedia/fotosHome/plannerf.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+#fotoBotonCatering{
+    background-color:green;
+    height: 12em;
+    background: url(../multimedia/catering/35082857_m-e1544021243231.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+#fotoBotonBebidas{
+    background-color:green;
+    height: 12em;
+    background: url(../multimedia/fotosHome/planerBebidas.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.nameOpcion{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    padding: 1em 3em;
+    background-color: white;
+    font-weight: bold;
+}
+.borde{
+    border: 1px red solid;
+}
+/* Fin PLanner */
+
+/* Comienzo salones */
+.sectionSalon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: solid 1px gray;
+}
+#divImagenSalon1{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/salones/salon3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+#divImagenSalon2{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/fotosHome/s1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+#divImagenSalon3{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/fotosHome/s2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+.nombreSalon{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.descripcionSalon{
+    width: 55vw;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: small;
+    color: gray;
+    font-weight: 100;
+}
+.divMapaBoton{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.botonContratar{
+    border-width: 2px;
+    border-style: solid;
+    background-color: #4ecc98;
+    border-color: #4ecc98;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;    float: right;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+.botonContratar:hover{
+    animation-name: efectoContratar;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+}
+#botonMapa{
+    display: none;
+}
+/* Fin salones */
+/* Comienzo Catering */
+#divImagenCat1{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/fotosHome/c1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+#divImagenCat2{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/fotosHome/c2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+#divImagenCat3{
+    width: 30em;
+    margin-bottom: 10px;
+    background: url(../multimedia/fotosHome/c3.jfif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-left: 10px;
+}
+/* Comienzo contacto */
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorForms{
+    background-color: #4ecc98;
+    border-radius: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorInfo{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    width: 50em;
+    margin-top: 2em;
+
+}
+
+.contenedorData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 20em;
+    margin-right: 0.5em;
+}
+
+.contenedorServ{
+    width: 20em;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorBoton{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.botonContacto{
+    background-color: white;
+    padding: 1em 7em;
+    border-radius: 2em;
+    font-family: 'Montserrat', sans-serif; 
+    border:none;
+    outline: none;
+    color: white;
+    border: 3px solid white;
+    background-color: #4ecc98;
+    font-weight: bolder;
+}
+
+.botonContacto:hover{
+    animation-name: efectoContratar;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+.inputData{
+    border-radius: 1em;
+    border: solid white;
+    margin-bottom: 0.5em;
+    outline: none;
+}
+.divCheck{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 20em;
+    height: 2em;
+}
+
+.checkService{
+    border-radius: 2em;
+    border:solid white  ;
+}
+.dropdown{
+    margin-top: 0.5em; 
+    background-color: white;
+    outline: none;
+    border-color: white ;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    border-style: solid;
+    font-weight: bold;
+}
+/* Comienzo del foother */
+.footer{
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1em;
+
+}
+.divFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.navLogoFoot{
+    display: flex;
+    align-items: center;
+}
+.footBevent{
+    width: 10em;
+    margin-left: 1em;
+    padding-right: 2em;
+}
+.navegacionFoot{
+    font-size: small;
+    font-weight: bold;
+    border-left: black 1px solid;
+    padding-left: 1em;
+}
+.divLogoTempFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.logoRedes{
+    width: 1.2em;
+    margin-bottom: 0.5em;
+}
+#provincia{
+    font-size: small;
+    margin-top: 2em;
+}
+/* Fin del foother */
+
+/* Puntos de quiebre */
+@media only screen and (max-width:768px){
+
+    #headerHome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+    }
+    .headerHome{
+        width: 100%;
+    }
+    .tituloPlanner{
+        display: none;
+    }
+    .opcionesPlanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6em;
+        margin-left: 0;
+        width: 100%;
+    }
+    .boton{
+        width: 16em;
+        height: 16em;
+        margin:1em;
+    }
+    .headerHome{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1em;
+        width: 100vw;
+    }
+    .barraNavegacion{
+        margin-top: 1em;
+        margin-right: 0;
+    
+    }
+/* home */
+.divIcons{
+    flex-direction: column;
+}
+.divIcon{
+    font-weight: lighter;
+    margin: 1em;
+    margin-top: 0.1em;
+    color: white;
+    background-color: black;
+    border-radius: 2em;
+}
+.tituloBienvenida1{
+    font-size: medium;
+}
+.iconServices{
+    display: none;
+}
+.ofertasMes{
+    width: 100%;
+}
+.ofertasMes{
+    display: none;
+}
+.carruselOfertas{
+    display: none;
+}
+.tituloOfertas{
+    padding: 1em;
+    margin: 0;
+}
+.galeriaDestacados{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#eventosDestacados1{
+    width: 80vw;
+}
+
+#eventosDestacados2{
+    width: 80vw;
+}
+#eventosDestacados3{
+    width: 80vw;
+}
+#eventosDestacados4{
+    width: 80vw;
+}
+/* Salones */
+.sectionSalon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.divImagen{
+    width: 100%;
+    height: 25vh;
+    background-position: bottom;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+#divImagenSalon1{
+    width: 100%;
+    margin: 0;
+    margin-top: 5em;
+}
+#divImagenSalon2{
+    width: 100%;
+    margin: 0;
+}
+#divImagenSalon3{
+    width: 100%;
+    margin: 0;
+}
+.descripcionSalon{
+    width:90%;
+}
+.mapaMobile{
+    display: none;
+}
+#botonMapa{
+    display: inline;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #ccc44e;
+    border-color: #ccc44e;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#divImagenCat1{
+    width: 100%;
+    margin: 0;
+    margin-top: 5em;
+}
+#divImagenCat2{
+    width: 100%;
+    margin: 0;
+}
+#divImagenCat3{
+    width: 100%;
+    margin: 0;
+}
+/* Contacto */
+body{
+    width: auto;
+}
+.contenedorForms{
+    border: #4ecc98 solid 1px;
+    width: 80vw;
+    background-color: white;
+    margin-bottom: 1em;
+    margin-top: 5em;
+    padding-top: 1em;
+}
+.contenedorInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+    padding-top: 0.5em ;
+}
+.contenedorData{
+    width: 70vw;
+    padding: 0;
+    margin: 0;
+    
+}
+.inputData{
+    border: #4ecc98 solid 1px;
+}
+.contenedorServ{
+    width: 70vw;
+    margin: 0;
+    padding: 0;
+    
+}
+.divCheck{
+    border: #4ecc98 solid 1px;
+    width: 70vw;
+}
+
+.botonContacto{
+    padding-left: 5em;
+    padding-right: 5em;
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.dropdown{
+    border: #4ecc98 1px solid;
+    margin-bottom: 1em;
+    
+}
+/* Footer */
+.divFooter{
+    flex-direction: column;
+    align-items: center;
+}
+.navegacionFoot{
+    display: none;
+}
+.divLogoTempFlex{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5em;
+}
+}
+/* efectos */
+@keyframes homeAparecer{
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+@keyframes ofertasMes{
+    0%{border:white 1px solid;}
+    50%{border:#4ecc98 1px solid;}
+    100%{border:white 1px solid;}
+}
+@keyframes backgroundZoom{
+    0%{background-size: 113%;}
+    100%{background-size: 150%;}
+}
+@keyframes planner_efecto{
+    0%{background-color: white;
+    color: black;}
+    100%{background-color:#c97392;
+    color:white;}
+}
+@keyframes efectoContratar{
+    0%{background-color: #4ecc98;}
+    100%{background-color: white; color: #4ecc98; font-weight: bold;}
+}
+
+
+/* los efectos pueden ponerse en un hover */

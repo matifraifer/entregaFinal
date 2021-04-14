@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto| Bevent</title>
+    <link rel="stylesheet" href="boots/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <header class="headerHome">
+        <img src="multimedia/Logos/Recurso 11.svg" width="150em"  alt="" class=logo>
+        <nav class="barraNavegacion">
+            <a href="index.html"   class="opcionesHome"> Home</a></li>
+            <a href="planner.html" class="opcionesHome">¡Planner!</a></li>
+            <a href="contacto.html" id="ultimaHome">Contacto</a></li>
+        </nav>
+    </header>
+
+    <main class="contacto">
+        <div>
+            <section>
+                <form action="" class="contenedorForms">
+                    <div class="contenedorInfo">
+                        <div class="contenedorData">
+                            <label for="nombre">Nombre: </label><!-- Es el texto que aparece en la pagina -->
+                            <input type="text" name="nombre" class="inputData">
+
+                            <label for="apellido">Apellido: </label>
+                            <input type="text" name="apellido" class="inputData">
+
+                            <label for="email">Dejanos tu email</label>
+                            <input type="text" name="email" class="inputData">
+
+                            <div>
+                                <button class="dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Genero
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Femenino</a></li>
+                                    <li><a class="dropdown-item" href="#">Masculino</a></li>
+                                    <li><a class="dropdown-item" href="#">Prefiero no decirlo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contenedorServ">
+                            <div>¿Que estas buscando?</div>
+                            <div class="divCheck">
+                                <label for="Servicio" class="textCheck">Salones</label>
+                                <input type="checkbox" name="servicio" value="1" class="checkService">
+                            </div>        
+                            <div class="divCheck">
+                                <label for="Servicio">Catering</label>
+                                <input type="checkbox" name="servicio" value="1" class="checkService">
+                            </div>  
+                            <div class="divCheck">
+                                <label for="Servicio">Sonido</label>
+                                <input type="checkbox" name="servicio" value="1" class="checkService">
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="contenedorBoton">
+                        <label for="boton.enviar"></label>
+                        <input type="button" name="boton.enviar" value="Enviar" class="botonContacto">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="divFooter">
+            <div class="navLogoFoot">
+                <a href="index.html"><img src="multimedia/Logos/Recurso 11.svg" class="footBevent" alt=""></a>
+                <ul class="navegacionFoot">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html">¡Planner!</a></li>
+                    <li><a href="salon.html">Salones</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="divLogoTempFlex">
+                <p> Seguinos en nuestras redes</p>
+                <img src="logo/fb.svg" class="logoRedes" alt="">
+                <img src="logo/ig.svg" class="logoRedes" alt="">
+                <img src="logo/ws.svg" class="logoRedes" alt="">
+            </div>
+        </div>
+        <address id="provincia">
+            <p>San Juan - Argentina</p>
+        </address>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script></body>
+
+</body>
+</html>
